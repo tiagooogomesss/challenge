@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AccountsControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AccountsControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.dws.challenge.html">com.dws.challenge</a> &gt; AccountsControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.991s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createAccount()</td>
+<td class="success">0.099s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createAccountEmptyAccountId()</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createAccountNegativeBalance()</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createAccountNoAccountId()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createAccountNoBalance()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createAccountNoBody()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createDuplicateAccount()</td>
+<td class="success">0.020s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAccount()</td>
+<td class="success">0.043s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">transferMoney()</td>
+<td class="success">0.765s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">transferMoneyInsufficientFromAccountBalance()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">transferMoneyNonExistentAccountId()</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">transferMoneyNonPositiveAmount()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>17:44:34.354 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:44:34.376 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:44:34.445 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.dws.challenge.AccountsControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+17:44:34.461 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dws.challenge.AccountsControllerTest], using SpringBootContextLoader
+17:44:34.471 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dws.challenge.AccountsControllerTest]: class path resource [com/dws/challenge/AccountsControllerTest-context.xml] does not exist
+17:44:34.472 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dws.challenge.AccountsControllerTest]: class path resource [com/dws/challenge/AccountsControllerTestContext.groovy] does not exist
+17:44:34.472 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.dws.challenge.AccountsControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:44:34.473 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.dws.challenge.AccountsControllerTest]: AccountsControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:44:34.532 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.dws.challenge.AccountsControllerTest]
+17:44:34.658 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/tiago/Downloads/challenge 2/build/classes/java/main/com/dws/challenge/ChallengeApplication.class]
+17:44:34.659 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.dws.challenge.ChallengeApplication for test class com.dws.challenge.AccountsControllerTest
+17:44:34.802 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.dws.challenge.AccountsControllerTest]: using defaults.
+17:44:34.803 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+17:44:34.824 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+17:44:34.824 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+17:44:34.825 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@492fc69e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@117632cf, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2fb68ec6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d71adc2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3add81c4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1a1d3c1a, org.springframework.test.context.event.EventPublishingTestExecutionListener@1c65121, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@159e366, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@57dc9128, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@24528a25, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@17ae98d7, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@59221b97, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6ac4944a]
+17:44:34.829 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@31198ceb testClass = AccountsControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@9257031 testClass = AccountsControllerTest, locations = '{}', classes = '{class com.dws.challenge.ChallengeApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@388ba540, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4f2c9ba6, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4c37b5b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3c435123, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2453f95d, org.springframework.test.context.web.socket.MockServerContainerContextCustomizer@4f071df8, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@4a3631f8], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.16)
+
+2023-09-22 17:44:35.274  INFO 9339 --- [    Test worker] c.dws.challenge.AccountsControllerTest   : Starting AccountsControllerTest using Java 11.0.20.1 on Tiagos-MacBook-Pro.local with PID 9339 (started by tiago in /Users/tiago/Downloads/challenge 2)
+2023-09-22 17:44:35.275  INFO 9339 --- [    Test worker] c.dws.challenge.AccountsControllerTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-09-22 17:44:37.096  INFO 9339 --- [    Test worker] c.dws.challenge.AccountsControllerTest   : Started AccountsControllerTest in 2.208 seconds (JVM running for 3.917)
+2023-09-22 17:44:37.595  INFO 9339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-22 17:44:37.596  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-22 17:44:37.597  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-09-22 17:44:37.865  INFO 9339 --- [    Test worker] c.dws.challenge.web.AccountsController   : Transferring 10 money from account with id Id-1 to account with id Id-2
+2023-09-22 17:44:37.894  INFO 9339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-22 17:44:37.894  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-22 17:44:37.895  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-09-22 17:44:37.897  INFO 9339 --- [    Test worker] c.dws.challenge.web.AccountsController   : Transferring 10 money from account with id nonExistentAccountId to account with id Id-2
+2023-09-22 17:44:37.903  INFO 9339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-22 17:44:37.903  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-22 17:44:37.904  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-09-22 17:44:37.914  INFO 9339 --- [    Test worker] c.dws.challenge.web.AccountsController   : Creating account Account(accountId=Id-123, balance=1000)
+2023-09-22 17:44:37.920  INFO 9339 --- [    Test worker] c.dws.challenge.web.AccountsController   : Creating account Account(accountId=Id-123, balance=1000)
+2023-09-22 17:44:37.925  INFO 9339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-22 17:44:37.925  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-22 17:44:37.926  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-09-22 17:44:37.928  INFO 9339 --- [    Test worker] c.dws.challenge.web.AccountsController   : Transferring 10 money from account with id Id-1 to account with id Id-2
+2023-09-22 17:44:37.932  INFO 9339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-22 17:44:37.932  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-22 17:44:37.933  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-09-22 17:44:37.942  INFO 9339 --- [    Test worker] c.dws.challenge.web.AccountsController   : Retrieving account for id Id-1695401077934
+2023-09-22 17:44:37.977  INFO 9339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-22 17:44:37.977  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-22 17:44:37.978  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-09-22 17:44:37.988  WARN 9339 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;java.lang.Object&gt; com.dws.challenge.web.AccountsController.createAccount(com.dws.challenge.domain.Account): [Field error in object 'account' on field 'balance': rejected value [-1000]; codes [Min.account.balance,Min.balance,Min.java.math.BigDecimal,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [account.balance,balance]; arguments []; default message [balance],0]; default message [Initial balance must be positive.]] ]
+2023-09-22 17:44:37.992  INFO 9339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-22 17:44:37.992  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-22 17:44:37.993  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-09-22 17:44:38.003  WARN 9339 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;java.lang.Object&gt; com.dws.challenge.web.AccountsController.createAccount(com.dws.challenge.domain.Account): [Field error in object 'account' on field 'accountId': rejected value []; codes [NotEmpty.account.accountId,NotEmpty.accountId,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [account.accountId,accountId]; arguments []; default message [accountId]]; default message [must not be empty]] ]
+2023-09-22 17:44:38.007  INFO 9339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-22 17:44:38.007  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-22 17:44:38.007  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-09-22 17:44:38.008  WARN 9339 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity&lt;java.lang.Object&gt; com.dws.challenge.web.AccountsController.createAccount(com.dws.challenge.domain.Account)]
+2023-09-22 17:44:38.012  INFO 9339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-22 17:44:38.012  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-22 17:44:38.013  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-09-22 17:44:38.014  INFO 9339 --- [    Test worker] c.dws.challenge.web.AccountsController   : Creating account Account(accountId=Id-123, balance=1000)
+2023-09-22 17:44:38.113  INFO 9339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-22 17:44:38.114  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-22 17:44:38.114  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-09-22 17:44:38.116  WARN 9339 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;java.lang.Object&gt; com.dws.challenge.web.AccountsController.createAccount(com.dws.challenge.domain.Account) with 2 errors: [Field error in object 'account' on field 'accountId': rejected value [null]; codes [NotEmpty.account.accountId,NotEmpty.accountId,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [account.accountId,accountId]; arguments []; default message [accountId]]; default message [must not be empty]] [Field error in object 'account' on field 'accountId': rejected value [null]; codes [NotNull.account.accountId,NotNull.accountId,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [account.accountId,accountId]; arguments []; default message [accountId]]; default message [must not be null]] ]
+2023-09-22 17:44:38.120  INFO 9339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-22 17:44:38.120  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-22 17:44:38.121  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-09-22 17:44:38.123  WARN 9339 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;java.lang.Object&gt; com.dws.challenge.web.AccountsController.transferMoney(com.dws.challenge.domain.MoneyTransfer): [Field error in object 'moneyTransfer' on field 'amount': rejected value [-10]; codes [Positive.moneyTransfer.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [moneyTransfer.amount,amount]; arguments []; default message [amount]]; default message [The amount to transfer must be positive.]] ]
+2023-09-22 17:44:38.124  WARN 9339 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;java.lang.Object&gt; com.dws.challenge.web.AccountsController.transferMoney(com.dws.challenge.domain.MoneyTransfer): [Field error in object 'moneyTransfer' on field 'amount': rejected value [0]; codes [Positive.moneyTransfer.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [moneyTransfer.amount,amount]; arguments []; default message [amount]]; default message [The amount to transfer must be positive.]] ]
+2023-09-22 17:44:38.128  INFO 9339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-22 17:44:38.128  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-22 17:44:38.129  INFO 9339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-09-22 17:44:38.131  WARN 9339 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;java.lang.Object&gt; com.dws.challenge.web.AccountsController.createAccount(com.dws.challenge.domain.Account): [Field error in object 'account' on field 'balance': rejected value [null]; codes [NotNull.account.balance,NotNull.balance,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [account.balance,balance]; arguments []; default message [balance]]; default message [must not be null]] ]
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[2023.09.22 17:44:34] (Coverage): Error during class instrumentation: org.springframework.boot.logging.log4j2.Log4J2LoggingSystem: java.lang.RuntimeException: java.io.IOException: Class org/apache/logging/log4j/core/config/composite/CompositeConfiguration not found
+[2023.09.22 17:44:36] (Coverage): Error during class instrumentation: org.springframework.core.ReactiveAdapterRegistry$ReactorAdapter: java.lang.RuntimeException: java.io.IOException: Class reactor/core/publisher/Flux not found
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.2.1</a> at 22 Sep 2023, 17:44:38</p>
+</div>
+</div>
+</body>
+</html>
