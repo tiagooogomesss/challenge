@@ -16,9 +16,12 @@ public class AccountsService {
   @Getter
   private final AccountsRepository accountsRepository;
 
+  private final NotificationService notificationService;
+
   @Autowired
-  public AccountsService(AccountsRepository accountsRepository) {
+  public AccountsService(AccountsRepository accountsRepository, NotificationService notificationService) {
     this.accountsRepository = accountsRepository;
+    this.notificationService = notificationService;
   }
 
   public void createAccount(Account account) {
@@ -45,7 +48,20 @@ public class AccountsService {
       );
     }
 
+
     accountFrom.setBalance(accountFromFinalBalance);
     accountTo.setBalance(accountToFinalBalance);
+
+    String transferDescriptionAccountFrom = String.format(
+            "A new transfer of %s money was was executed from your account to account id %s.",
+            amount, accountFrom
+    );
+    String transferDescriptionAccountTo = String.format(
+            "A new transfer of %s money was was executed from account %s to your account.",
+            amount, accountFrom
+    );
+
+    notificationService.notifyAboutTransfer(accountFrom, transferDescriptionAccountFrom);
+    notificationService.notifyAboutTransfer(accountTo, transferDescriptionAccountTo);
   }
 }
